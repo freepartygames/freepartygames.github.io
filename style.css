@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+    --clr-neutral-900: hsl(230, 8%, 15%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-400: hsl(142, 90%, 61%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    min-height: 100vh;
+    line-height: 1.6;
+    background: var(--clr-neutral-900);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.logo{
+    width: 275px;
+    height: auto;
+}
+
+.nav-item{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dropdown-item{
+    color: white;
+}
+
+.titleWP h2{
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+}
+
+.hWP{
+    width: 80%;
+    height: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+}
+
+.warning{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 10%;
+    border: 4px solid rgb(221, 109, 109);
+    border-radius: 3px;
+}
+
+.warning h4{
+    color: white;
+}
+
+/*start cards*/
+
+
+.card-group{
+    display: inline-block;
+    margin-bottom: 4rem;
+}
+
+.button-pop {
+	display: inline-block;
+	padding: 12px 16px;
+	background-color: #5FF5B4;
+	color: #FFF;
+	text-decoration: none;
+	margin: 0px 8px;
+	text-transform: uppercase;
+	border-radius: 8px;
+	font-weight: 700;
+}
+
+.button-pop:hover{
+    background-color: #35f5a2;
+    color: #fff;
+}
+
+.popup {
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.4s;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0.2);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 16px;
+}
+
+.popup-inner {
+	background-color: #FFF;
+	padding: 32px 16px;
+	max-width: 768px;
+	border-radius: 16px;
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.popup-inner h3 {
+	color: #666;
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+
+.popup-inner p {
+	color: #888;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 16px;
+}
+
+.popup:target {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.wpRules{
+    padding: 11px 17px;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s;
+}
+
+.wpRules:hover{
+    background-color: #5FF5B4;
+    color: black;
+}
+
+.card, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8, .card-9{
+    display: inline-block;
+    color: var(--clr-neutral-100);
+    background-size: cover;
+    padding: 5rem 0 0 0;
+    max-width: 35ch;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    margin: 0.2rem;
+    transform: scale(0.9);
+
+    transition: transform 500ms ease;
+}
+
+.card-8{
+    padding-top: 105px;
+}
+
+.card {
+    background: linear-gradient(145deg, #54CFE8, #57B7F2, #5A8EDB, #6781F5, #5A56F5);
+}
+
+.card-2 {
+    background: linear-gradient(145deg, #B74FE8, #9352F2, #6756DB, #5268F2, #4F8CE8);
+}
+
+.card-3 {
+    background: linear-gradient(145deg, #DE8EC8, #E87689, #D17165, #EB9573, #EB9F63);
+}
+
+.card-4 {
+    background: linear-gradient(145deg, #54CFE8, #57B7F2, #5A8EDB, #6781F5, #5A56F5);
+}
+
+.card-5 {
+    background: linear-gradient(145deg, #B74FE8, #9352F2, #6756DB, #5268F2, #4F8CE8);
+}
+
+.card-6 {
+    background: linear-gradient(145deg, #DE8EC8, #E87689, #D17165, #EB9573, #EB9F63);
+}
+
+.card-7 {
+    background: linear-gradient(145deg, #54CFE8, #57B7F2, #5A8EDB, #6781F5, #5A56F5);
+}
+
+.card-8 {
+    background: linear-gradient(145deg, #B74FE8, #9352F2, #6756DB, #5268F2, #4F8CE8);
+}
+
+.card-9 {
+    background: linear-gradient(145deg, #DE8EC8, #E87689, #D17165, #EB9573, #EB9F63);
+}
+
+
+/*making the card bigger*/
+.card:hover, .card:focus-within,
+.card-2:hover, .card:focus-within,
+.card-3:hover, .card:focus-within,
+.card-4:hover, .card:focus-within,
+.card-5:hover, .card:focus-within,
+.card-6:hover, .card:focus-within,
+.card-7:hover, .card:focus-within,
+.card-8:hover, .card:focus-within,
+.card-9:hover, .card:focus-within{
+    transform: scale(0.95);
+}
+
+.card-content{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+    hsl(0 0% 0% / 0), 
+    hsl(255 0% 50% / 0.3) 10%,
+    hsl(0 0% 0% / 1)
+    );
+}
+
+.card-title{
+    position: relative;
+    width: max-content;
+}
+
+.card-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: calc(var(--padding) * -1);
+    bottom: -2px;
+    width: calc(100% + var(--padding));
+    background: var(--clr-neutral-400);
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+
+/*making the line come and go -- scaleX is making it come and go*/
+.card:hover .card-title::after,
+.card:focus-within .card-title::after,
+.card-2:hover .card-title::after,
+.card-2:focus-within .card-title::after,
+.card-3:hover .card-title::after,
+.card-3:focus-within .card-title::after,
+.card-4:hover .card-title::after,
+.card-4:focus-within .card-title::after,
+.card-5:hover .card-title::after,
+.card-5:focus-within .card-title::after,
+.card-6:hover .card-title::after,
+.card-6:focus-within .card-title::after,
+.card-7:hover .card-title::after,
+.card-7:focus-within .card-title::after,
+.card-8:hover .card-title::after,
+.card-8:focus-within .card-title::after,
+.card-9:hover .card-title::after,
+.card-9:focus-within .card-title::after{
+    transform: scaleX(1);
+}
+
+.card-body{
+    color: rgb(255, 255, 255 / 0.8);
+}
+
+@media only screen and (min-width: 800px){
+    @media(hover){
+        .card-content{
+            transform: translateY(63%);
+            transition: transform 500ms ease;
+        }
+        .card:hover .card-content, .card:focus-within .card-content,
+        .card-2:hover .card-content, .card-2:focus-within .card-content,
+        .card-3:hover .card-content, .card-3:focus-within .card-content,
+        .card-4:hover .card-content, .card-4:focus-within .card-content,
+        .card-5:hover .card-content, .card-5:focus-within .card-content,
+        .card-6:hover .card-content, .card-6:focus-within .card-content,
+        .card-7:hover .card-content, .card-7:focus-within .card-content,
+        .card-8:hover .card-content, .card-8:focus-within .card-content,
+        .card-9:hover .card-content, .card-9:focus-within .card-content{
+            transform: translateY(0%);
+            transition-delay: 500ms;
+        }
+
+        .card:focus-within .card-content,
+        .card-2:focus-within .card-content,
+        .card-3:focus-within .card-content,
+        .card-4:focus-within .card-content,
+        .card-5:focus-within .card-content,
+        .card-6:focus-within .card-content,
+        .card-7:focus-within .card-content,
+        .card-8:focus-within .card-content,
+        .card-9:focus-within .card-content{
+            transition-duration: 0ms;
+        }
+
+        .card-content > *:not(.card-title) {
+            opacity: 0;
+            transition: opacity 500ms linear; 
+        }
+
+        .card:hover .card-content > *:not(.card-title),
+        .card:focus-within .card-content > *:not(.card-title),
+        .card-2:hover .card-content > *:not(.card-title),
+        .card-2:focus-within .card-content > *:not(.card-title),
+        .card-3:hover .card-content > *:not(.card-title),
+        .card-3:focus-within .card-content > *:not(.card-title),
+        .card-4:hover .card-content > *:not(.card-title),
+        .card-4:focus-within .card-content > *:not(.card-title),
+        .card-5:hover .card-content > *:not(.card-title),
+        .card-5:focus-within .card-content > *:not(.card-title),
+        .card-6:hover .card-content > *:not(.card-title),
+        .card-6:focus-within .card-content > *:not(.card-title),
+        .card-7:hover .card-content > *:not(.card-title),
+        .card-7:focus-within .card-content > *:not(.card-title),
+        .card-8:hover .card-content > *:not(.card-title),
+        .card-8:focus-within .card-content > *:not(.card-title),
+        .card-9:hover .card-content > *:not(.card-title),
+        .card-9:focus-within .card-content > *:not(.card-title) {
+            opacity: 1;
+            transition-delay: 1000ms;
+        }
+
+        .card-title::after{
+            transform: scaleX(0);
+        }
+    }
+}
+
+.button{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-neutral-400);
+    padding: 0.5em 1.25em;
+    border-radius: 0.25rem;
+}
+
+.button:hover,.button:focus{
+    background-color: var(--clr-neutral-100);
+}
+
+@media (prefers-reduced-motion: reduce){
+    *,
+    *::before,
+    *::after{
+        animation-duration: 0.01ms
+        !important;
+        animation-iteration-count: 1 
+        !important;
+        transition-duration: 0.01ms
+        !important;
+        scroll-behavior: auto !important;
+        transition-delay: 0ms
+        !important;
+    }
+}
+
+
+/*end cards*/
